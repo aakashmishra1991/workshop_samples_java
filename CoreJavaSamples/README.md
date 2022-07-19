@@ -1,7 +1,7 @@
-##Core Java Samples
+## Core Java Samples
 ### All java workshop samples 
 
-####Consist of examples Java versions and below packages
+#### Consist of examples Java versions and below packages
 - oops
   Consists of examples for all oops concepts w.r.t Java 
 - core
