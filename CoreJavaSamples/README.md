@@ -1,25 +1,14 @@
 ## Core Java Samples
-### All java workshop samples 
-
-#### Consist of examples Java versions and below packages
-- oops
-
-  Consists of examples for all oops concepts w.r.t Java 
-
-
-- core
-  
-  Consists of examples for all core Java concepts
-
-
-- logicalquestions
-
-  Consists of some simple logical questions and competitive programming examples w.r.t Java 
-
-
-- java8,9,10,11...
-  
-  Consists of examples for all java version w.r.t package names 
+### All java workshop samples
+#### Consist of examples Java versions and below packages<br>
+- oops <br>
+  Consists of examples for all oops concepts w.r.t Java.
+- core <br>
+  Consists of examples for all core Java concepts.
+- logicalquestions<br>
+  Consists of some simple logical questions and competitive programming examples w.r.t Java.
+- java8,9,10,11...<br>
+  Consists of examples for all java version w.r.t package names. 
 
 ****
 #### How to Run
