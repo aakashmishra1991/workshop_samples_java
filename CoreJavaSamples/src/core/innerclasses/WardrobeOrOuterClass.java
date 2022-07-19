@@ -1,4 +1,4 @@
-package core.innerclasses;
+package innerclasses;
 
 public class WardrobeOrOuterClass {
     String name = "outerclass";

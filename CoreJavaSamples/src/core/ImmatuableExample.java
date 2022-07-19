@@ -1,4 +1,3 @@
-package core;
 
 // step 1 :  class must be final
 public final class ImmatuableExample {

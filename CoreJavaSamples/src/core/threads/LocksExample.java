@@ -1,4 +1,4 @@
-package core.threads;
+package threads;
 
 public class LocksExample {
     /*

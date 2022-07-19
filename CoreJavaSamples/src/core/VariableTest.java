@@ -1,4 +1,4 @@
-package core;
+import java.io.IOException;
 
 
 abstract class SuperVariable{

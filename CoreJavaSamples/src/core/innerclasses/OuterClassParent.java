@@ -1,5 +1,3 @@
-package core.innerclasses;
-
 public class OuterClassParent {
 
     public static void assertTest(){

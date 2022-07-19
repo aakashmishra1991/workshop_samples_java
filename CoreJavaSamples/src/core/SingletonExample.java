@@ -1,5 +1,3 @@
-package core;
-
 public class SingletonExample {
 
     // Step 1.  make constructor private

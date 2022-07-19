@@ -1,8 +1,9 @@
-package core.collections;
+package collections;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ListExample {
         public static void main(String[] args) {
