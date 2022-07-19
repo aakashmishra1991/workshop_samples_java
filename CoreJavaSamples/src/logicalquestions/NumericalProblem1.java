@@ -1,4 +1,4 @@
-package logicalquests;
+package logicalquestions;
 // use any arithmetic expressions instead of , to equate
 // 4,4,4,4 = 17
 // 4,4,4,4 = 19

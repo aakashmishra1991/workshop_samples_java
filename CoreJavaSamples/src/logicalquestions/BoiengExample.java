@@ -1,9 +1,7 @@
-package logicalquests;
+package logicalquestions;
 // There is a boeing 767 plane how many golf ball can you fit in a boeing 767.
 
-import java.io.IOException;
 import java.util.Collection;
-import java.util.concurrent.Semaphore;
 
 // This is boieng class  ---> "Object 1 === boeing 767"
 public class BoiengExample {

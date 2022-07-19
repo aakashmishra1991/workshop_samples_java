@@ -1,4 +1,4 @@
-package logicalquests;
+package logicalquestions;
 
 import java.math.BigInteger;
 

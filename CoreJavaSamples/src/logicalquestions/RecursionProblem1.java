@@ -1,4 +1,4 @@
-package logicalquests;
+package logicalquestions;
 
 // iterate and print 1-> 100
 // Problem Statement (ps1): iterate and print 1-> 100
