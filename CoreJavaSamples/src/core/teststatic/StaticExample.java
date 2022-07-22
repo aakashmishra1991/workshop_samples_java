@@ -1,4 +1,4 @@
-package teststatic;
+package core.teststatic;
 
 public class StaticExample {
     static String name = "Ram";

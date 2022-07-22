@@ -1,6 +1,8 @@
-import teststatic.TestStatic1;
-import  teststatic.TestStatic2;
+package core;
 
+
+import core.teststatic.TestStatic1;
+import core.teststatic.TestStatic2;
 
 public class ReflectionExample {
 

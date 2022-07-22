@@ -1,11 +1,18 @@
+package core.innerclasses;
+
 public class OuterClassParent {
 
-    public static void assertTest(){
-
+    class InnerClassChild {
+        public void tellMe() {
+            System.out.println("XYZ");
+        }
     }
 
-    private InnerClassChild innerClassChild;
+    private InnerClassChild innerClassChild ;
 
+    public void setInnerClassChild() {
+        innerClassChild = new InnerClassChild();
+    }
 
     public static void main(String[] args) {
         final OuterClassParent outerClassParent = new OuterClassParent();
@@ -19,16 +26,5 @@ public class OuterClassParent {
         innerClassChild.tellMe();
 
         String X =  "something";
-    }
-
-    public void setInnerClassChild() {
-        innerClassChild = new InnerClassChild();
-    }
-
-
-    class InnerClassChild {
-        public void tellMe() {
-            System.out.println("XYZ");
-        }
     }
 }
