@@ -1,3 +1,5 @@
+package core.generics;
+
 import java.util.*;
 
 public class Generics2 {

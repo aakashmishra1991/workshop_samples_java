@@ -16,8 +16,9 @@ public class RecursionProblem1 {
     // ps2: iterate and print 1-> 100 without using any loops (while, dowhile, for)
     public void ps2Solution() {
         System.out.println("Solution for PS 2");
-       printNos(100);
+        printNos(100);
     }
+
     void printNos(int n) {
         if (n > 0) {
             printNos(n - 1);

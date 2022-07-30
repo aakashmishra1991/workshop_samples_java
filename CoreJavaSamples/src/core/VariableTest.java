@@ -1,4 +1,4 @@
-import java.io.IOException;
+import core.singleton.SingletonExample;
 
 
 abstract class SuperVariable{
