@@ -17,6 +17,17 @@ public class Point4WildCardsInGenerics {
         allSalaryListTo1.addAll(salaryOfEmployeeList2);
         allSalaryListTo1.addAll(salaryOfEmployeeList3);
 
+        allSalaryListTo1.forEach(System.out::println);
+
+        List<A> list =  new ArrayList<>();
+        list.add(new B());
 
     }
+}
+
+class A{
+
+}
+class B extends A{
+
 }

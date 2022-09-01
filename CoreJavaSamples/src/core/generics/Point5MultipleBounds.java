@@ -1,28 +1,83 @@
 package core.generics;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Point5MultipleBounds {
     public static void main(String[] args) {
-        List<Integer> salaryOfEmployeeList1 = Arrays.asList(10000, 20000, 20000);
-
-        List<Double> salaryOfEmployeeList2 = Arrays.asList(10000.10, 30000.30, 40000.50);
-
-        List<Float> salaryOfEmployeeList3 = Arrays.asList(10000.10F, 30000.30F, 40000.50F);
-
-        List<Number> allSalaryListTo1 = new ArrayList<>();
-        allSalaryListTo1.addAll(salaryOfEmployeeList1);
-        allSalaryListTo1.addAll(salaryOfEmployeeList2);
-        allSalaryListTo1.addAll(salaryOfEmployeeList3);
+        final SingleBoundEngine<AbstractEngine> boundedTwoStrokeEngineDiesel = new SingleBoundEngine<>(new DieselTwoStrokeEngine());
+        boundedTwoStrokeEngineDiesel.printNameOfEngineInstantiated();
 
 
+        final SingleBoundEngine<AbstractEngine> boundedTwoStrokeEngine = new SingleBoundEngine<>(new TwoStrokeEngine());
+        boundedTwoStrokeEngine.printNameOfEngineInstantiated();
     }
 
+    // multiple bound
     public <T extends Number & Comparable<? super T>> int compareNumbers(T t1, T t2) {
         return t1.compareTo(t2);
     }
+}
 
+// single bound
+// once i change the type of T extends (meaning change the boundary, the generics will complaint
+// the boundary is changed and its no more accepting Engine and subtypes.
+//class SingleBoundEngine<T extends TwoStrokeEngine> {
+class SingleBoundEngine<T extends AbstractEngine> {
+    private T typeOfEngine;
+
+    SingleBoundEngine(T typeOfEngine) {
+        this.typeOfEngine = typeOfEngine;
+    }
+
+    public void printNameOfEngineInstantiated() {
+        this.typeOfEngine.printNameOfEngine();
+    }
 
 }
+
+class MultipleBoundEngine<T extends TwoStrokeEngine & Engine> {
+    private T typeOfEngine;
+
+    MultipleBoundEngine(T typeOfEngine) {
+        this.typeOfEngine = typeOfEngine;
+    }
+
+    public void printNameOfEngineInstantiated() {
+        this.typeOfEngine.printNameOfEngine();
+    }
+
+}
+
+
+interface Engine {
+    void printNameOfEngine();
+}
+
+abstract class AbstractEngine implements Engine {
+    public void printNameOfEngine() {
+        System.out.println("Parent Engine");
+    }
+}
+
+class TwoStrokeEngine extends AbstractEngine {
+    public void printNameOfEngine() {
+        System.out.println("Two Stroke Engine");
+    }
+}
+
+class PetrolTwoStrokeEngine extends TwoStrokeEngine {
+    public void printNameOfEngine() {
+        System.out.println("Petrol Two Stroke Engine");
+    }
+}
+
+class DieselTwoStrokeEngine extends TwoStrokeEngine {
+    public void printNameOfEngine() {
+        System.out.println("Diesel Two Stroke Engine");
+    }
+}
+
+class FourStrokeEngine extends AbstractEngine {
+    public void printNameOfEngine() {
+        System.out.println("Four Stroke Engine");
+    }
+}
+

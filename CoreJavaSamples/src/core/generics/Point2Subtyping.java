@@ -6,12 +6,17 @@ import java.util.List;
 public class Point2Subtyping {
     public static void main(String[] args) {
         // subtyping not possible
-//        List<Integer> list = new ArrayList<Number>();
+        //List<Integer> list = new ArrayList<Number>();
 
         // subtyping not possible
-  //      List<Number> list1 = new ArrayList<Integer>();
+        //List<Number> list1 = new ArrayList<Integer>();
 
-        Number somenumber = new Integer(1);
+        // non subtype list
+        List<Number> list2 = new ArrayList<Number>();
+
+
+        Integer somenumber = new Integer(1);
+        list2.add(somenumber);
 
     }
 }

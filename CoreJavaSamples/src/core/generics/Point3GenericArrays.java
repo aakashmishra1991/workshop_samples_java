@@ -15,5 +15,8 @@ public class Point3GenericArrays {
         // and on runtime the compiler will not come to know what is the type of my array, hence not allowed
         //List<String>[] ListOfStringsArray = new List<String>[10];
 
+        // solution
+        List<String>[] ListOfStringsArray = new List[10];
+
     }
 }

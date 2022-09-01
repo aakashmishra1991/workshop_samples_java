@@ -9,7 +9,7 @@ public class GenericsMain {
         final SpecializedStringFlowerBox stringFlowerBox = new SpecializedStringFlowerBox();
         stringFlowerBox.setItemType("Daisy");
 
-        final GenericFlowerBox<Integer> genericFlowerBox = new GenericFlowerBox<>();
+        final GenericFlowerBox<Integer> genericFlowerBox = new GenericFlowerBox<Integer>();
         // Json Parser
         genericFlowerBox.setItemType(1);
 
